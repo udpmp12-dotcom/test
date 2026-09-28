@@ -37,9 +37,31 @@
     </div>
 
     <div id="output" class="output hidden">
-      <div class="output-label">Resultado</div>
+      <div class="output-label">Artículo</div>
       <p id="output-text" class="output-text"></p>
+      <p id="aviso-text" class="aviso-text hidden"></p>
     </div>
+
+    <div id="edit-prompt" class="edit-prompt hidden">
+      <p class="edit-question">¿Quieres editar algo?</p>
+      <div class="edit-actions">
+        <button type="button" id="edit-yes-btn" class="secondary-btn">Sí, editar</button>
+        <button type="button" id="edit-no-btn" class="secondary-btn">No, listo</button>
+      </div>
+    </div>
+
+    <form id="edit-form" class="form hidden">
+      <textarea
+        id="edit-text"
+        class="input-field"
+        placeholder="¿Qué quieres cambiar?"
+        rows="3"
+        required
+      ></textarea>
+      <button type="submit" id="edit-submit-btn" class="submit-btn">Aplicar cambio</button>
+    </form>
+
+    <div id="done" class="done hidden">Listo. Puedes pegar otro texto o URL cuando quieras.</div>
 
     <div id="error" class="error hidden"></div>
   </main>

@@ -161,6 +161,64 @@ body {
   white-space: pre-wrap;
 }
 
+.aviso-text {
+  margin: 16px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-gold);
+  color: var(--color-gold);
+  font-family: var(--font-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.edit-prompt {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.edit-question {
+  margin: 0;
+  font-family: var(--font-secondary);
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: var(--color-text);
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  border: 1px solid var(--color-gold);
+  border-radius: 4px;
+  padding: 10px 28px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.secondary-btn:hover {
+  background-color: var(--color-gold);
+  color: #000000;
+}
+
+.done {
+  text-align: center;
+  color: var(--color-gold);
+  font-family: var(--font-secondary);
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
 .error {
   text-align: center;
   color: #ff6b6b;
