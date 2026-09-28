@@ -3,6 +3,7 @@
   --color-text: #ffffff;
   --color-gold: #d4af37;
   --font-main: "Times New Roman", Times, serif;
+  --font-secondary: "Montserrat", "Helvetica Neue", Arial, sans-serif;
 }
 
 * {
@@ -29,13 +30,27 @@ body {
   gap: 24px;
 }
 
-.title {
-  text-align: center;
-  font-weight: normal;
-  font-size: 2.25rem;
-  letter-spacing: 0.05em;
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.logo {
+  width: 140px;
+  height: auto;
+}
+
+.subtitle {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
   color: var(--color-gold);
-  margin: 0 0 8px;
+  margin: 0;
 }
 
 .form {
@@ -70,8 +85,11 @@ body {
   align-self: center;
   background-color: transparent;
   color: var(--color-gold);
-  font-family: var(--font-main);
-  font-size: 1.1rem;
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  font-size: 0.95rem;
+  text-transform: uppercase;
   border: 1px solid var(--color-gold);
   border-radius: 4px;
   padding: 12px 40px;
@@ -92,7 +110,10 @@ body {
 .loading {
   text-align: center;
   color: var(--color-gold);
-  font-size: 1.1rem;
+  font-family: var(--font-secondary);
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .dots span {
@@ -125,7 +146,9 @@ body {
 
 .output-label {
   color: var(--color-gold);
-  font-size: 0.9rem;
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 0.85rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 12px;
@@ -141,7 +164,8 @@ body {
 .error {
   text-align: center;
   color: #ff6b6b;
-  font-size: 1rem;
+  font-family: var(--font-secondary);
+  font-size: 0.95rem;
 }
 
 .hidden {
