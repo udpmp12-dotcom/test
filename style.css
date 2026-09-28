@@ -1,0 +1,149 @@
+:root {
+  --color-bg: #000000;
+  --color-text: #ffffff;
+  --color-gold: #d4af37;
+  --font-main: "Times New Roman", Times, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.container {
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  text-align: center;
+  font-weight: normal;
+  font-size: 2.25rem;
+  letter-spacing: 0.05em;
+  color: var(--color-gold);
+  margin: 0 0 8px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-field {
+  width: 100%;
+  background-color: #000000;
+  color: var(--color-text);
+  font-family: var(--font-main);
+  font-size: 1.1rem;
+  border: 1px solid var(--color-gold);
+  border-radius: 4px;
+  padding: 16px;
+  resize: vertical;
+  outline: none;
+}
+
+.input-field::placeholder {
+  color: #888888;
+}
+
+.input-field:focus {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 1px var(--color-gold);
+}
+
+.submit-btn {
+  align-self: center;
+  background-color: transparent;
+  color: var(--color-gold);
+  font-family: var(--font-main);
+  font-size: 1.1rem;
+  border: 1px solid var(--color-gold);
+  border-radius: 4px;
+  padding: 12px 40px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: var(--color-gold);
+  color: #000000;
+}
+
+.submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.loading {
+  text-align: center;
+  color: var(--color-gold);
+  font-size: 1.1rem;
+}
+
+.dots span {
+  animation: blink 1.4s infinite;
+  animation-fill-mode: both;
+}
+
+.dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes blink {
+  0%, 80%, 100% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+.output {
+  border: 1px solid var(--color-gold);
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.output-label {
+  color: var(--color-gold);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.output-text {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.error {
+  text-align: center;
+  color: #ff6b6b;
+  font-size: 1rem;
+}
+
+.hidden {
+  display: none;
+}

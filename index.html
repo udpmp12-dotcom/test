@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analizador</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">Analizador</h1>
+
+    <form id="input-form" class="form">
+      <textarea
+        id="input-text"
+        class="input-field"
+        placeholder="Pega un texto o una URL..."
+        rows="6"
+        required
+      ></textarea>
+
+      <button type="submit" id="submit-btn" class="submit-btn">Enviar</button>
+    </form>
+
+    <div id="loading" class="loading hidden">
+      <span class="loading-text">Procesando</span>
+      <span class="dots"><span>.</span><span>.</span><span>.</span></span>
+    </div>
+
+    <div id="output" class="output hidden">
+      <div class="output-label">Resultado</div>
+      <p id="output-text" class="output-text"></p>
+    </div>
+
+    <div id="error" class="error hidden"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
